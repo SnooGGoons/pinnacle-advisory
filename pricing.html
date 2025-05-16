@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinnacle Advisory Group - Pricing Plans for Financial & Tax Solutions in Nairobi, Kenya">
+    <meta name="keywords" content="financial advisory, tax solutions, pricing plans, Nairobi, Kenya">
+    <meta property="og:title" content="Pinnacle Advisory - Pricing Plans">
+    <meta property="og:description" content="Discover tailored financial and tax advisory plans for your business with Pinnacle Advisory Group.">
+    <meta property="og:image" content="https://snooggoons.github.io/pinnacle-advisory/assets/img/logo.png">
+    <meta property="og:url" content="https://snooggoons.github.io/pinnacle-advisory/pricing.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Pinnacle Advisory - Pricing Plans</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Preloader with Progress Bar -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Button -->
+    <button class="floating-contact" aria-label="Open contact options">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+    <div class="contact-options hidden">
+        <button class="contact-option" data-modal="contactModal">Contact Form</button>
+        <button class="contact-option chat-option">Live Chat</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Pinnacle Advisory Logo" loading="lazy">
+                <div class="logo-text">
+                    <h1>Pinnacle Advisory</h1>
+                    <p>Financial & Tax Solutions</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Find Your Perfect Plan</h2>
+            <p>Answer a few questions to discover the best pricing plan for your business.</p>
+        </div>
+        <div class="pricing-intro" data-aos="fade-up" data-aos-delay="100">
+            <p>Our interactive pricing bot will guide you to a tailored financial solution in just a few steps.</p>
+            <button class="btn btn-outline reset-chat" id="resetChat">Reset Chat</button>
+        </div>
+        <div class="pricing-bot-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="chat-box" role="dialog" aria-label="Pricing bot">
+                <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+                <div class="chat-options" id="chatOptions"></div>
+            </div>
+            <div id="botError" class="hidden error-message">Oops, something went wrong with the pricing bot. Please try again or <a href="index.html#contact">contact us</a>.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Pinnacle Advisory Group provides comprehensive financial and tax advisory services to businesses and individuals across Kenya.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#services">Tax & Compliance</a></li>
+                    <li><a href="index.html#services">Financial Management</a></li>
+                    <li><a href="index.html#services">Business Advisory</a></li>
+                    <li><a href="index.html#services">KRA Services</a></li>
+                    <li><a href="index.html#services">Custom Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>Nairobi, Kenya</li>
+                    <li>+254 750 038110</li>
+                    <li><a id="footer-email" href="#">Loading...</a></li>
+                    <li>Mon-Fri: 8:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Pinnacle Advisory Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Contact Modal -->
+    <div class="modal hidden" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <h2 id="contactModalLabel">Contact Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="modalContactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Tax & Compliance">Tax & Compliance</option>
+                        <option value="Financial Management">Financial Management</option>
+                        <option value="Business Advisory">Business Advisory</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="assets/js/modules/preloader.js" defer></script>
+    <script src="assets/js/modules/emailInjection.js" defer></script>
+    <script src="assets/js/modules/mobileMenu.js" defer></script>
+    <script src="assets/js/modules/smoothScroll.js" defer></script>
+    <script src="assets/js/modules/floatingContact.js" defer></script>
+    <script src="assets/js/modules/modal.js" defer></script>
+    <script src="assets/js/modules/darkMode.js" defer></script>
+    <script src="assets/js/modules/form.js" defer></script>
+    <script src="assets/js/pricing.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

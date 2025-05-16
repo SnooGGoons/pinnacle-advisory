@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinnacle Advisory Group - Financial & Tax Solutions in Nairobi, Kenya">
+    <title>Pinnacle Advisory - Financial & Tax Solutions</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Preloader with Progress Bar -->
+    <div id="preloader">
+        <div class="loader"></div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Button -->
+    <button class="floating-contact" aria-label="Open contact options">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+    <div class="contact-options hidden">
+        <button class="contact-option" data-modal="contactModal">Contact Form</button>
+        <button class="contact-option chat-option">Live Chat</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Pinnacle Advisory Logo">
+                <div class="logo-text">
+                    <h1>Pinnacle Advisory</h1>
+                    <p>Financial & Tax Solutions</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Empowering your success with innovative <span id="typingWord">Solutions</span></h1>
+            <p>We specialize in providing tailored financial solutions that drive growth and ensure compliance.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Our Company</h2>
+            <p>We specialize in providing tailored financial solutions that drive growth and ensure compliance.</p>
+        </div>
+        <div class="about-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="Financial advisory team">
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="400">
+                <h3>Your Trusted Financial Partner</h3>
+                <p>Pinnacle Advisory Group was founded with a mission to simplify financial management for businesses and individuals. Our team of certified professionals brings decades of combined experience in tax consultancy, financial planning, and business advisory services.</p>
+                <p>We pride ourselves on delivering personalized solutions that address your unique financial challenges while helping you capitalize on opportunities for growth and savings.</p>
+                <div class="stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Clients Served</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-text">Years Experience</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="1000">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-text">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Our Comprehensive Services</h2>
+            <p>We offer a wide range of financial and advisory services to meet all your business needs.</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-b1b1c467df8e" alt="Tax & Compliance">
+                </div>
+                <div class="service-content">
+                    <h3>Tax & Compliance</h3>
+                    <p>Streamlined personal and business tax planning, filing, and education to ensure full compliance with regulations.</p>
+                    <a href="#" class="service-link" data-modal="taxModal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-b1b1c467df8e" alt="Financial Management">
+                </div>
+                <div class="service-content">
+                    <h3>Financial Management</h3>
+                    <p>Efficient bookkeeping, data entry, and strategic financial planning to optimize your business performance.</p>
+                    <a href="#" class="service-link" data-modal="financeModal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-b1b1c467df8e" alt="Business Advisory">
+                </div>
+                <div class="service-content">
+                    <h3>Business Advisory</h3>
+                    <p>Expert guidance on business registration, risk management, and growth strategies for sustainable success.</p>
+                    <a href="#" class="service-link" data-modal="advisoryModal">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="section-title" data-aos="fade-up">
+            <h2>What Our Clients Say</h2>
+            <p>Hear from businesses and individuals who trust us with their financial needs.</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                <p>"Pinnacle Advisory transformed our tax compliance process, saving us time and money!"</p>
+                <p class="author">Jane M., SME Owner</p>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="400">
+                <p>"Their financial planning services helped us scale our startup efficiently."</p>
+                <p class="author">John K., Startup Founder</p>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="600">
+                <p>"Expert advice and outstanding support—highly recommend!"</p>
+                <p class="author">Mary W., Entrepreneur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="cta">
+        <h2 data-aos="fade-up">Ready to Transform Your Financial Management?</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Contact us today for a free consultation and discover how we can help your business thrive.</p>
+        <a href="#contact" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Get Your Free Consultation</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our services.</p>
+        </div>
+        <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-item">
+                <h3 class="faq-question">What services do you offer?</h3>
+                <div class="faq-answer">
+                    <p>We provide tax and compliance, financial management, and business advisory services tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How can I file my VAT returns?</h3>
+                <div class="faq-answer">
+                    <p>Our team assists with VAT filings, ensuring compliance with KRA regulations. Contact us to get started.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer services for startups?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we have tailored plans for startups, including tax planning and financial management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p>Ready to take your financial management to the next level? Contact us today.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact Information</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+254 750 038110</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a id="contact-email" href="#">Loading...</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+                <h3>Send Us a Message</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Tax & Compliance">Tax & Compliance</option>
+                            <option value="Financial Management">Financial Management</option>
+                            <option value="Business Advisory">Business Advisory</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Pinnacle Advisory Group provides comprehensive financial and tax advisory services to businesses and individuals across Kenya.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Tax & Compliance</a></li>
+                    <li><a href="#services">Financial Management</a></li>
+                    <li><a href="#services">Business Advisory</a></li>
+                    <li><a href="#services">KRA Services</a></li>
+                    <li><a href="#services">Custom Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>Nairobi, Kenya</li>
+                    <li>+254 750 038110</li>
+                    <li><a id="footer-email" href="#">Loading...</a></li>
+                    <li>Mon-Fri: 8:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Pinnacle Advisory Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modals -->
+    <div class="modal hidden" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <h2 id="contactModalLabel">Contact Us</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="modalContactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Tax & Compliance">Tax & Compliance</option>
+                        <option value="Financial Management">Financial Management</option>
+                        <option value="Business Advisory">Business Advisory</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="taxModal" tabindex="-1" aria-labelledby="taxModalLabel">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <h2 id="taxModalLabel">Tax & Compliance</h2>
+            <p>Our tax services ensure you stay compliant while maximizing savings. We handle:</p>
+            <ul>
+                <li>Personal and business tax planning</li>
+                <li>KRA filing (VAT, PAYE, Income Tax)</li>
+                <li>Compliance audits and certifications</li>
+                <li>Tax education and advisory</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="financeModal" tabindex="-1" aria-labelledby="financeModalLabel">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <h2 id="financeModalLabel">Financial Management</h2>
+            <p>We optimize your financial performance with:</p>
+            <ul>
+                <li>Accurate bookkeeping and data entry</li>
+                <li>Financial reporting and analysis</li>
+                <li>Budget planning and forecasting</li>
+                <li>Cash flow management</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="advisoryModal" tabindex="-1" aria-labelledby="advisoryModalLabel">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <h2 id="advisoryModalLabel">Business Advisory</h2>
+            <p>Our advisory services drive sustainable success through:</p>
+            <ul>
+                <li>Business registration and setup</li>
+                <li>Risk assessment and management</li>
+                <li>Growth strategies and market analysis</li>
+                <li>Operational efficiency consulting</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/modules/preloader.js"></script>
+    <script src="assets/js/modules/emailInjection.js"></script>
+    <script src="assets/js/modules/mobileMenu.js"></script>
+    <script src="assets/js/modules/smoothScroll.js"></script>
+    <script src="assets/js/modules/floatingContact.js"></script>
+    <script src="assets/js/modules/modal.js"></script>
+    <script src="assets/js/modules/darkMode.js"></script>
+    <script src="assets/js/modules/faq.js"></script>
+    <script src="assets/js/modules/form.js"></script>
+    <script src="assets/js/modules/swipe.js"></script>
+    <script src="assets/js/typing.js"></script>
+    <script src="assets/js/ticker.js"></script>
+    <script src="assets/js/lazyload.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
